@@ -1,0 +1,665 @@
+
+#content .Box {
+  font-size: 0pt;
+  position: relative;
+  margin: 5px;
+  margin-bottom: 18px;
+  color: #5A2800;
+  border-left: 2px solid #3a3738;
+  border-right: 2px solid #3a3738;
+  background-color: #debb9d;
+  background-repeat: no-repeat;
+  overflow: visible;
+}
+
+#content .BoxContent {
+  font-family: Verdana, Arial, Times New Roman, sans-serif;
+  font-size: 9pt;
+  background-color: #f9f1c0;
+  color: #5A2800;
+  min-height: 395px;
+  height: auto !important;
+  height: 415px;
+}
+
+/* "star-HTML-hack" to correct Box width in IE */
+* html #content .Box {
+  width: 100%;
+}
+/* "star-HTML-hack" to correct BoxContent width in IE */
+* html #content .BoxContent {
+  width: 100%;
+}
+
+#content th {
+  font-family: Verdana, Arial, Times New Roman, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+  background-color: #505050;
+}
+
+#content .BoxContent td {
+  font-family: Verdana, Arial, Times New Roman, sans-serif;
+  font-size: 10pt;
+  color: #5A2800;
+ }
+
+/* Corners */
+
+#content .Corner-tl {
+  position: absolute;
+  top: -4px;
+  left: -5px;
+  width: 17px;
+  height: 17px;
+  z-index: 50;
+}
+
+#content .Corner-tr {
+  position: absolute;
+  top: -4px;
+  right: -5px;
+  width: 17px;
+  height: 17px;
+  z-index: 50;
+}
+
+#content .BottomCornersHelper {
+  position: absolute;
+  width: 100%;
+}
+
+#content .CornerWrapper-b {
+  position: absolute;
+  width:100%;
+}
+
+#content .Corner-bl {
+  position: absolute;
+  bottom: -4px;
+  left: -6px;
+  width: 17px;
+  height: 17px;
+  z-index: 50;
+}
+
+#content .Corner-br {
+  position: absolute;
+  bottom: -4px;
+  right: -6px;
+  width: 17px;
+  height: 17px;
+  z-index: 50;
+}
+
+/* Borders */
+
+#content .Border_1 {
+  position: relative;
+  height: 6px;
+  width: 100%;
+  background-repeat: repeat-x;
+}
+
+#content .BorderTitleText {
+  position: relative;
+  height: 24px;
+  background-repeat: repeat-x;
+}
+
+#content .Title {
+  position: absolute;
+  top: 6px;
+  left: 5px;
+}
+
+#content .Border_2 {
+  margin: 4px;
+  padding: 0px;
+  background-color: #793d03;
+}
+
+#content .Border_3 {
+  margin: 1px;
+  border-top: 1px solid #793d03;
+  border-bottom: 1px solid #793d03;
+}
+
+/** -------------------------------
+ *  OLD Stylesheet declarations for
+ *  the CONTENT AREA
+ *  -------------------------------
+ */
+
+#content .BoxContent td .white {
+  color: #EFEFEF;
+  visibility: visible;
+}
+
+#content .BoxContent td .whites {
+  color: #EFEFEF;
+  visibility: visible;
+  font-size: 9pt;
+}
+
+#content .BoxContent .white {
+  color : #EFEFEF;
+  visibility : visible;
+}
+
+#content .BoxContent td .green {
+  color : #00BF00;
+}
+
+#content .BoxContent td .yellow {
+  color : #FFBB05;
+}
+
+#content .BoxContent td .red {
+  color : #EF0000;
+}
+
+#content .BoxContent td .grey {
+  color : #808080;
+}
+
+/** -------------------------------
+ *  Stylesheet declarations for the
+ *  NEW TABLES
+ *  -------------------------------
+ */
+
+.TableContainer {
+  border: 1px solid black;
+  position: relative;
+  width: 100%;
+}
+.TableContainer .Odd {
+  background-color: #1b1e26;
+}
+.TableContainer .Even {
+  background-color: #20222c;
+}
+
+/* TABLEHEADER DECORATION */
+.TableContainer .CaptionContainer {
+  position: relative;
+  background-color: #4b4b4b !important;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+}
+.TableContainer .CaptionContainer .CaptionInnerContainer {
+	position: relative;
+  background-color: #4b4b4b;
+  width: 100%;
+  height: 100%;
+  padding-top: 3px;
+  padding-bottom: 4px;
+}
+.TableContainer .CaptionContainer .Text {
+  font-family: Verdana, Arial, Times New Roman, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+  padding-left: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.TableContainer .CaptionContainer .CaptionEdgeLeftTop {
+	position: absolute;
+  width: 5px;
+  height: 5px;
+	top: -2px;
+  left: -2px;
+  z-index: 50;
+}
+.TableContainer .CaptionContainer .CaptionEdgeRightTop {
+	position: absolute;
+  width: 5px;
+  height: 5px;
+	top: -2px;
+  right: -2px;
+  z-index: 50;
+}
+.TableContainer .CaptionContainer .CaptionEdgeLeftBottom {
+	position: absolute;
+  width: 5px;
+  height: 5px;
+	left: -2px;
+	bottom: -3px;
+  z-index: 50;
+}
+.TableContainer .CaptionContainer .CaptionEdgeRightBottom {
+	position: absolute;
+  width: 5px;
+  height: 5px;
+	right: -2px;
+	bottom: -3px;
+  z-index: 50;
+}
+.TableContainer .CaptionContainer .CaptionBorderTop {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0px;
+  top: -1px;
+}
+.TableContainer .CaptionContainer .CaptionBorderBottom {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0px;
+  bottom: -2px;
+}
+.TableContainer .CaptionContainer .CaptionVerticalLeft {
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  left: -1px;
+  top: 0px;
+}
+.TableContainer .CaptionContainer .CaptionVerticalRight {
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  right: -1px;
+  top: 0px;
+}
+* html .TableContainer .CaptionContainer .CaptionEdgeRightTop {
+  right: -3px;
+}
+* html .TableContainer .CaptionContainer .CaptionEdgeLeftBottom {
+  bottom: -4px;
+}
+* html .TableContainer .CaptionContainer .CaptionEdgeRightBottom {
+  right: -3px;
+  bottom: -4px;
+}
+* html .TableContainer .CaptionContainer .CaptionBorderBottom {
+  bottom: -3;
+}
+* html .TableContainer .CaptionContainer .CaptionVerticalRight {
+  right: -2px;
+}
+/* TABLE CONTENT */
+.TableContentContainer {
+  border: 1px solid #4b4b4b;
+  position: relative;
+  margin-right: 4px;
+  height: 100%;
+  background-color: #202229;
+  padding: 0px;
+}
+.TableContent {
+  width: 100%;
+  border-collapse: collapse;
+}
+.TableContent td {
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+}
+/* INNERLYOUT 1 */
+.TableContainer .Table1 {
+  width: 100%;
+  background-color: #202229;
+  border: 2px solid #55636c;
+}
+.TableContainer .Table1 .InnerTableContainer {
+  padding: 5px;
+}
+/* INNERLYOUT 2 */
+.TableContainer .Table2 {
+  width: 100%;
+  border: 2px solid #55636c;
+  background-color: #1b1e26;
+  padding: 0px;
+  margin: 0px;
+  border-collapse: collapse;
+}
+.TableContainer .Table2 td {
+  padding: 0px;
+  margin: 0px;
+}
+.TableContainer .Table2 .InnerTableContainer {
+  margin-top: 1px;
+}
+.TableContainer .Table2 .InnerTableContainer table {
+  border-collapse: collapse;
+}
+.TableContainer .Table2 .InnerTableContainer td {
+  padding-top: 2px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+  padding-right: 5px;
+  border: 1px solid #000000;
+}
+/* INNERLYOUT 3 */
+.TableContainer .Table3 {
+  width: 100%;
+  border: 2px solid #55636c;
+  background-color: #1b1e26;
+}
+.TableContainer .Table3 .InnerTableContainer {
+  width: 100%;
+  position: relative;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+.TableContainer .Table3 .TableContentAndRightShadow td {
+  border: 1px solid #000000;
+}
+/* INNERLYOUT 4 */
+.TableContainer .Table4 {
+  width: 100%;
+  border: 2px solid #55636c;
+  background-color: #1b1e26;
+}
+.TableContainer .Table4 .InnerTableContainer {
+  width: 100%;
+  position: relative;
+  margin-top: 3px;
+}
+.TableContainer .Table4 .TableContentAndRightShadow .TableContent td {
+  padding-left: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+/* INNERLYOUT 5 */
+.TableContainer .Table5 {
+  width: 100%;
+  border: 2px solid #55636c;
+  background-color: #1b1e26;
+}
+.TableContainer .Table5 .InnerTableContainer {
+  width: 100%;
+  position: relative;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+.TableContainer .Table5 .TableContentAndRightShadow .TableContent td {
+  padding-left: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+/* SHADOWS */
+.TableShadowContainerRightTop {
+  position: relative;
+  top: 0px;
+  right: 3px;
+  margin-right: 0px;
+  float: right;
+  z-index: 99;
+}
+.TableShadowRightTop {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 4px;
+  height: 5px;
+  z-index: 99;
+}
+.TableContentAndRightShadow {
+  position: relative;
+  background-repeat: repeat-y;
+  background-position: top right;
+  margin-right: 3px;
+}
+.TableShadowContainer {
+  position: relative;
+  widht: 100%;
+  margin-right: 5px;
+}
+.TableBottomShadow {
+  position: relative;
+  height: 5px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.TableBottomLeftShadow {
+  position: relative;
+  height: 5px;
+  width: 4px;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+}
+.TableBottomRightShadow {
+  position: relative;
+  float: right;
+  right: -2px;
+  top: 0px;
+  height: 5px;
+  width: 4px;
+}
+/* LABELS */
+.LabelV {
+  font-weight: bold;
+  padding-right: 10px;
+  white-space: nowrap;
+  vertical-align: top;
+}
+.LabelH {
+  font-weight: bold;
+  padding-right: 10px;
+  white-space: nowrap;
+  background-color: #20222c;
+
+}
+.LabelH td {
+  background-color: #20222c;
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+}
+
+/* BUTTONS */
+.InnerTableButtonRow {
+  width: 100%;
+  padding-left: 1px;
+  padding-right: 0px;
+  padding-bottom: 4px;
+  border: 0px;
+}
+.InnerTableButtonRow td {
+  padding-right: 4px;
+}
+.BigButton {
+  position: relative;
+  width: 135px;
+  height: 25px;
+  z-index: 10;
+}
+.BigButtonOver {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 137px;
+  height: 25px;
+  visibility: hidden;
+  z-index: 15;
+}
+.ButtonText {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 25px;
+  width: 135px;
+  z-index: 20;
+}
+.TopButtonContainer {
+  position: relative;
+  right: 4px;
+  top: 4px;
+  z-index: 60;
+}
+* html .TopButtonContainer {
+  right: 27px;
+}
+.TopButtonContainer .TopButton {
+  position: absolute;
+  right: 0px;
+  z-index: 55;
+}
+#content .BoxContent .Odd {
+  background-color: #202229;
+  padding: 2px;
+}
+
+#content .BoxContent .Even {
+  background-color: #1b1e26;
+  padding: 2px;
+}
+
+#content .NewsCategoryIconSmall {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat;
+}
+#content .BoxContent .Odd {
+  background-color: #202229;
+  padding: 2px;
+}
+
+#content .BoxContent .Even {
+  background-color: #1b1e26;
+  padding: 2px;
+}
+
+#content .NewsCategoryIconSmall {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat;
+}
+#content .BoxContent .Odd {
+  background-color: #202229;
+  padding: 2px;
+}
+
+#content .BoxContent .Even {
+  background-color: #1b1e26;
+  padding: 2px;
+}
+
+#content .NewsCategoryIconSmall {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat;
+}
+
+/* News Ticker */
+#NewsTicker {
+	height: 100%;
+}
+
+#content #NewsTicker .BoxContent {
+  padding: 5px;
+  min-height: 90px;
+  height: auto !important;
+  height: 100px;
+}
+
+#content #NewsTicker .BoxContent .Row {
+  position: relative;
+  width: 100%;
+}
+
+#content #NewsTicker .NewsTickerIcon {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat;
+}
+
+#content #NewsTicker .NewsTickerText {
+  position: relative;
+  margin-left: 20px;
+}
+
+#content #NewsTicker .NewsTickerDate {
+  position: absolute;
+  top: 0px;
+  float: left;
+}
+
+#content #NewsTicker .NewsTickerShortText {
+  margin-left: 85px;
+  height: 14px;
+}
+
+#content #NewsTicker .NewsTickerFullText {
+  margin-left: 85px;
+  margin-right: 20px;
+  display: none;
+}
+
+#content #NewsTicker .NewsTickerExtend {
+  position: relative;
+  right: 0px;
+  top: 1px;
+  right: 1px;
+  height: 12px;
+  width: 12px;
+  background-repeat: no-repeat;
+  float: right;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* News */
+
+#content #News .BoxContent {
+  min-height: 100px;
+  height: auto !important;
+  height: 110px;
+}
+
+#content #News .NewsHeadlineBackground {
+  position: relative;
+  height: 28px;
+  margin-bottom: 5px;
+  background-repeat: repeat-x;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+
+#content #News .NewsHeadlineIcon {
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#content #News .NewsHeadlineDate {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  width: 85px;
+  color: white;
+}
+
+#content #News .NewsHeadlineText {
+  position: relative;
+  top: 7px;
+  left: 135px;
+  font-weight: bold;
+  color: white;
+}

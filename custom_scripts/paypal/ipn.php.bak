@@ -1,0 +1,50 @@
+<?php    
+    if(gethostbyaddr($_SERVER['REMOTE_ADDR']) != 'notify.paypal.com')
+    { 
+        exit();
+    }
+    if($_REQUEST['debug'])
+    {
+        ini_set('display_errors', true);
+        error_reporting(E_ALL);
+    }
+    // MySQLi connection
+    $mysql = new mysqli('localhost', 'root', 'raul1234', 'otx');
+    // Variables, don't touch!
+    $receiverEmail = $_REQUEST['receiver_email'];
+    $paymentStatus = $_REQUEST['payment_status'];
+    $mcGross = $_REQUEST['mc_gross'];
+    $mcCurrency = $_REQUEST['mc_currency'];
+    $customValue = stripslashes(ucwords(strtolower(trim($_REQUEST['custom']))));  
+	
+	
+	$SQL->query("INSERT INTO `paypal_pagamentos` (`id`, `conteudo`) VALUES (NULL, '". json_encode($_REQUEST, true)."');");
+    // Prices
+    $prices = array('5.00' => 30, '11.00' => 100, '18.00' => 150, '50.00' => 200);
+    // Setup
+    $receiver = 'raul_freitas2@yahoo.com.br';
+    $currency = 'BRL';
+    $whatToDo = 2; // 1 - delete, 2 - custom
+    
+    if($paymentStatus == 'Completed' && $receiverEmail == $receiver && isset($prices[$mcGross]) && $mcCurrency == $currency)
+    {
+        $mysql->query('UPDATE `accounts` SET `premium_points` = `premium_points` + ' . $prices[$mc_gross] . ' WHERE `name` = "' . $customValue . '"');
+        $mysql->query('UPDATE `accounts` SET `backup_points` = `backup_points` + ' . $prices[$mc_gross] . ' WHERE `name` = "' . $customValue . '"');
+        // $mysql->query('INSERT INTO `z_shop_points_bought` (`id`, `amount`, `type`, `accountid`, `code`, `paypalmail`, `date`) VALUES (NULL , '.$prices[$mc_gross].', Paypal, '.$accountId['id'].', '.$mc_gross.', '.$payer_email.', CURRENT_TIMESTAMP);');
+    }
+    elseif($paymentStatus == 'Reversed' && $receiverEmail == $receiver)
+    {
+        if($whatToDo == 1)
+        {
+            $mysql->query('DELETE FROM `accounts` WHERE `name` = "' . $customValue . '"');
+        }
+        elseif($whatToDo == 2)
+        {
+            // if not deleting, what to do?
+        }
+    }
+    else
+    {
+        exit();
+    }
+?>

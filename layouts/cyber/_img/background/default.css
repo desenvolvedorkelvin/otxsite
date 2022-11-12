@@ -1,0 +1,310 @@
+@charset "utf-8";
+/*
+Diablo Layout By Bufo
+(c) Bufo Studio. All rights reserved.
+*/
+
+/* General CSS Settings */
+* {margin:0; padding:0;}
+a { text-decoration:none; color:#d1d1d1;}
+a img {border:0;}
+a:focus {outline:none; -moz-outline-style:none;}
+a:hover {color:white; text-decoration:none;}
+object {outline:none; -moz-outline-style:none;}
+p {margin:1.8em 0;}
+p.lead {margin-top:0;}
+em em {font-style:normal;}
+.relative {position:relative;}
+.left {float:left;}
+.right {float:right;}
+.clean_5 {height: 5px; width: 100%; float: left;}
+.clean_20 {height: 20px; width: 100%; float: left;}
+
+  /* ################################################################## */
+ /* ############################ Page show ########################### */
+/* ################################################################## */
+
+html {}
+body {
+    zoom: 1.15 /* Coloca o zoom em 200% */
+}
+
+body {
+                background-color: #15202b!important;
+                opacity:1.0;
+                margin:auto;
+                width:100%;
+                background-repeat:no-repeat;
+                background-position:center top;
+                background-image: linear-gradient(to top, #3b6f92ad, #021a59 130%);
+                margin:0px;
+                margin-top:0px;
+                background-attachment:fixed;
+                margin:auto;width:100%;background-repeat:no-repeat;background-position:center top;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-image:url('../_img/background/bg3.jpg');
+                letter-spacing: 0px;
+                font-family: Bebas, sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                -webkit-font-smoothing: subpixel-antialiased;
+                font-smoothing: subpixel-antialiased;
+                text-rendering: optimizeLegibility;
+}
+
+#logo {
+	background: #000000 url('../_img/background/background.jpg') top center no-repeat;
+	font-size: 11px;
+	color: #b7b7b7;
+	font-family: Verdana;
+	text-shadow: 1px 1px #000;
+	padding: 0px;
+	height: 330px;
+	width: 1020px;
+	margin: -50px auto;
+}
+
+  /* ################################################################## */
+ /* ############################# CONTENT ############################ */
+/* ################################################################## */
+
+#page {
+	width: 1109px;
+	margin: auto;
+}
+
+
+#content {
+	background:url('../_img/content/content.jpg') repeat-y;
+	margin:auto;
+	width:968px;
+	margin-top: 70px;
+	margin-left: 62px;
+	position: absolute center;
+	float: left;
+}
+
+#content_bot {
+	background: url('../_img/content/content_bot.png') no-repeat;
+	height: 74px;
+	width:968px;
+	margin:auto;
+	float: left;
+	margin-left: 62px;
+}
+
+  /* ########################################## */
+ /* ################ MENU TOP ################ */
+/* ########################################## */
+
+#menu_top {
+	background: url('../_img/menu/menu_top.png') top center no-repeat;
+	height: 154px;
+	width: 1109px;
+	margin: -65px 0px 0px -71px;
+	float: left;
+}
+
+#menu_top .left {
+	margin-top: 57px;
+	margin-left: 23px;
+}
+
+#menu_top .online {
+	margin-left: 400px;
+		margin-top: -20px;
+	width: 260px;
+	height: 80px;
+}
+
+#menu_top .right {
+	margin-top: -60px;
+	margin-left: 703px;
+}
+
+div.fadehover {
+	position: relative;
+}
+ 
+img.a {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+ 
+img.b {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.divider{height:1px;width:inherit;}
+
+/* left */
+
+#menu_top_home {
+	float: left;
+	position: relative;
+	left: 0px;
+}
+
+#menu_top_acc {
+	float: left;
+	position: relative;
+	left: 120px;
+}
+
+#menu_top_shop {
+	float: left;
+	position: relative;
+	left: 240px;
+}
+
+/* right */
+
+#menu_top_forum {
+	float: left;
+	position: relative;
+	left: 0px;
+}
+
+#menu_top_highscores {
+	float: left;
+	position: relative;
+	left: 120px;
+}
+
+#menu_top_register {
+	float: left;
+	position: relative;
+	left: 240px;
+}
+
+  /* ########################################## */
+ /* ################ MENU LEFT ############### */
+/* ########################################## */
+
+#menu_left {
+	margin: -36px 0px 10px 19px;
+	width: 182px;
+	float: left;
+}
+
+#menu-label {
+background:url("../images/menu/menu-label.png") no-repeat;
+color:#CCCCCC;
+float:left;
+height:34px;
+width:171px;
+margin-left: 5px;
+}
+
+#icon-news, #icon-account, #icon-community, #icon-library, #icon-shop, #icon-toplevel, #icon-topguilds, #icon-search, #icon-info  {
+width:32px;
+height:32px;
+float:left;
+margin:0px 5px 0 10px;
+}
+
+#icon-news { background:url("../images/menu/icon-news.gif") no-repeat scroll 0 0 transparent; }
+#icon-account { background:url("../images/menu/icon-account.gif") no-repeat scroll 0 0 transparent; }
+#icon-community { background:url("../images/menu/icon-community.gif") no-repeat scroll 0 0 transparent; }
+#icon-library { background:url("../images/menu/icon-library.gif") no-repeat scroll 0 0 transparent; }
+#icon-shop { background:url("../images/menu/icon-shop.gif") no-repeat scroll 0 0 transparent; }
+#icon-toplevel { background:url("../images/menu/icon-toplevel.gif") no-repeat scroll 0 0 transparent; }
+#icon-topguilds { background:url("../images/menu/icon-topguilds.gif") no-repeat scroll 0 0 transparent; }
+#icon-search { background:url("../images/menu/icon-search.gif") no-repeat scroll 0 0 transparent; }
+#icon-info { background:url("../images/menu/icon-info.gif") no-repeat scroll 0 0 transparent; }
+
+#text-news, #text-account, #text-community, #text-library, #text-shop, #text-toplevel, #text-topguilds, #text-search, #text-info {
+width:157px;
+height:34px;
+float:left;
+margin:-32px 5px 0 15px;
+}
+#text-news { background:url("../images/menu/latestnews.png") no-repeat scroll 0 0 transparent; }
+#text-account { background:url("../images/menu/account.png") no-repeat scroll 0 0 transparent; }
+#text-community { background:url("../images/menu/community.png") no-repeat scroll 0 0 transparent; }
+#text-library { background:url("../images/menu/library.png") no-repeat scroll 0 0 transparent; }
+#text-shop { background:url("../images/menu/shop.png") no-repeat scroll 0 0 transparent; }
+#text-toplevel { background:url("../images/menu/top_level.png") no-repeat scroll 0 0 transparent; }
+#text-topguilds { background:url("../images/menu/top_guilds.png") no-repeat scroll 0 0 transparent; }
+#text-search { background:url("../images/menu/player_search.png") no-repeat scroll 0 0 transparent; }
+#text-info { background:url("../images/menu/information.png") no-repeat scroll 0 0 transparent; }
+
+
+#menu_links {
+	width: 182px;
+	float:left;
+	font-size:11px;
+	font-weight:bold;
+	text-align:justify;
+}
+
+#menu_links ul {
+	list-style:none outside none;
+	margin:0;
+	padding:0;
+}
+
+#menu_links li {
+	background: url("../images/menu/chains.png") no-repeat;
+	width: 137px;
+	display:block;
+	padding:3px 10px 3px 0px;
+	margin: auto;
+}
+
+#menu_links li:hover {
+	background: url("../images/menu/chains-hover.png") no-repeat;
+	width: 137px;
+	display:block;
+	padding:3px 10px 3px 0px;
+	margin: auto;
+}
+
+#menu_links li a {
+	color:#d1d1d1;
+	display:block;
+	text-decoration:none;
+	padding: 0px 0px 0px 20px;
+	text-shadow: 1px 1px #000;
+}
+
+#menu_links li a:hover {
+	color:#FFF;
+	display:block;
+	text-decoration:none;
+	padding: 0px 0px 0px 20px;
+}
+
+  /* ########################################## */
+ /* ################### TEXT ################# */
+/* ########################################## */
+
+#content_text {
+	margin: 0px 0px 5px 12px;
+	width: 541px;
+	float: left;
+}
+
+  /* ########################################## */
+ /* ################ MENU RIGHT ############### */
+/* ########################################## */
+
+#menu_right {
+	margin: -35px 0px 10px 13px;
+	width: 182px;
+	float: left;
+}
+
+.search {
+	background: #4b4b4b;
+	border: 1px solid black;
+	padding: 3px;
+	color: #FFF;
+}

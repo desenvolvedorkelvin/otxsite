@@ -1,0 +1,41 @@
+<?php
+$paypal_report_url = 'https://site/paypal_report.php';
+$paypal_return_url = 'https://site/?subtopic=accountmanagement';
+$paypal_image = 'https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif';
+$paypal_payment_type = '_xclick'; // '_xclick' (Buy Now) or '_donations'
+
+$paypals[0]['mail'] = 'brendobruno@outlook.com'; // your paypal login
+$paypals[0]['name'] = '1 premium points + 1 premium points DOUBLE no server por R$ 1,00';
+$paypals[0]['money_amount'] = '1.00';
+$paypals[0]['money_currency'] = 'BRL'; // USD, EUR, more codes: https://cms.paypal.com/us/cgi-bin/?cmd=_render-content&content_ID=developer/e_howto_api_nvp_currency_codes
+$paypals[0]['premium_points'] = 2;
+
+$paypals[1]['mail'] = 'brendobruno@outlook.com'; // your paypal login
+$paypals[1]['name'] = '5 premium points + 5 premium points DOUBLE no server por R$ 5,00';
+$paypals[1]['money_amount'] = '5.00';
+$paypals[1]['money_currency'] = 'BRL'; // USD, EUR, more codes: https://cms.paypal.com/us/cgi-bin/?cmd=_render-content&content_ID=developer/e_howto_api_nvp_currency_codes
+$paypals[1]['premium_points'] = 10;
+
+$paypals[2]['mail'] = 'brendobruno@outlook.com'; // your paypal login
+$paypals[2]['name'] = '10 premium points + 10 premium points DOUBLE no server por R$ 10,00';
+$paypals[2]['money_amount'] = '10.00';
+$paypals[2]['money_currency'] = 'BRL'; // USD, EUR, more codes: https://cms.paypal.com/us/cgi-bin/?cmd=_render-content&content_ID=developer/e_howto_api_nvp_currency_codes
+$paypals[2]['premium_points'] = 20;
+
+$paypals[3]['mail'] = 'brendobruno@outlook.com'; // your paypal login
+$paypals[3]['name'] = '20 premium points + 20 premium points DOUBLE no server por R$ 20,00';
+$paypals[3]['money_amount'] = '20.00';
+$paypals[3]['money_currency'] = 'BRL'; // USD, EUR, more codes: https://cms.paypal.com/us/cgi-bin/?cmd=_render-content&content_ID=developer/e_howto_api_nvp_currency_codes
+$paypals[3]['premium_points'] = 40;
+
+$paypals[4]['mail'] = 'brendobruno@outlook.com'; // your paypal login
+$paypals[4]['name'] = '50 premium points + 50 premium points DOUBLE no server por R$ 50,00';
+$paypals[4]['money_amount'] = '50.00';
+$paypals[4]['money_currency'] = 'BRL'; // USD, EUR, more codes: https://cms.paypal.com/us/cgi-bin/?cmd=_render-content&content_ID=developer/e_howto_api_nvp_currency_codes
+$paypals[4]['premium_points'] = 100;
+
+$paypals[5]['mail'] = 'brendobruno@outlook.com'; // your paypal login
+$paypals[5]['name'] = '100 premium points + 200 premium points TRIPLE no server por R$ 100,00';
+$paypals[5]['money_amount'] = '100.00';
+$paypals[5]['money_currency'] = 'BRL'; // USD, EUR, more codes: https://cms.paypal.com/us/cgi-bin/?cmd=_render-content&content_ID=developer/e_howto_api_nvp_currency_codes
+$paypals[5]['premium_points'] = 300;
